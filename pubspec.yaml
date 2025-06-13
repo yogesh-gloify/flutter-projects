@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   fluttertoast: ^8.2.12
+  flutter_slidable: ^4.0.0
+  slide_to_act: ^2.0.2
 
 dev_dependencies:
   flutter_test:
