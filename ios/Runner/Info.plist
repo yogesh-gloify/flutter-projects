@@ -46,6 +46,8 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Log in</string>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
