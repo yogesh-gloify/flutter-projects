@@ -4,7 +4,8 @@ Recommended folder structure following best practices used in real-world product
 
 ## High-Level Project Structure
 
-lib/
+```
+    lib/
 ├── core/                  # App-wide utilities, constants, themes, services
 │   ├── constants/
 │   ├── services/          # Global services (e.g., API, local storage, etc.)
@@ -41,6 +42,8 @@ lib/
 │
 ├── main.dart              # Entry point
 └── app.dart               # App setup (MaterialApp, providers, etc.)
+
+```
 
 
 ## ✅ Key Principles Behind This Structure
