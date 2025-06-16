@@ -59,50 +59,58 @@ Recommended folder structure following best practices used in real-world product
 ## 🔧 Example Use Case
 Let's say you're building a news app with login:
 
-lib/presentation/screens/home/
+ - lib/presentation/screens/home/
     - home_screen.dart
 
 widgets/news_card.dart, category_selector.dart
 
-lib/data/models/news_article.dart
-lib/data/repositories/news_repository_impl.dart
-lib/domain/usecases/get_news_articles.dart
-lib/providers/news_provider.dart
+ - lib/data/models/news_article.dart
+ - lib/data/repositories/news_repository_impl.dart
+ - lib/domain/usecases/get_news_articles.dart
+ - lib/providers/news_provider.dart
 
 
 ## 📦 Popular Foldering Approaches
 Here are some approaches that teams adopt:
 
-1. Feature-first (modular) – Great for large apps:
+### Feature-first (modular) – Great for large apps:
+
+```
 lib/features/
   ├── login/
   ├── home/
   ├── settings/
+```
 
 
-2. Layer-first (clean arch) – Great for clear separation:
+### Layer-first (clean arch) – Great for clear separation:
 
+```
 lib/
   ├── data/
   ├── domain/
   ├── presentation/
+```
 
 You can even combine both, for example:
 
-lib/features/home/data/
-lib/features/home/presentation/
+#### lib/features/home/data/
+#### lib/features/home/presentation/
 
 
 ## 📘 Bonus: Recommended Packages
- - State Management: Riverpod, Bloc, Provider
 
- - Routing: GoRouter, auto_route
+| Functionality        | Recommended Packages        |
+|----------------------|-----------------------------|
+| **State Management** | Riverpod, Bloc, Provider    |
+| **Routing**          | GoRouter, auto_route        |
+| **DI (DI Container)**| get_it                      |
+| **API Handling**     | Dio, Retrofit               |
+| **Local Storage**    | Hive, Drift                 |
 
- - Dependency Injection: get_it
+---
 
- - API Handling: Dio, Retrofit
-
- - Local DB: Hive, Drift
+Happy coding! 💙
 
 
 
